@@ -2,6 +2,27 @@
   text-align: center;
   padding: 2rem;
 }
+.header-stat {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  align-self: center;
+}
+.stat-container {
+  text-align: center;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 80vh;
+  flex-direction: column;
+  gap: 10dvh;
+}
+.stat {
+  justify-content: center;
+  align-items: center;
+}
 
 .home-video {
   width: 100%;

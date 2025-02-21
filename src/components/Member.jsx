@@ -144,7 +144,7 @@ function Member() {
       style={{
         backgroundColor: "#f2f2f2",
         padding: "2rem",
-        height: "92vh",
+        paddingBottom: "20dvh",
       }}
     >
       <h1>MARHBEE BIK!</h1>
