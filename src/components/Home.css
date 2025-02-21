@@ -1,0 +1,28 @@
+.home-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-video {
+  width: 100%;
+  height: auto;
+  max-width: 800px; /* Adjust size to fit your design */
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+/* Optional: You can also add some overlay or design on top of the video */
+.video-container {
+  position: relative;
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  border-radius: 8px;
+}

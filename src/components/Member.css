@@ -1,0 +1,173 @@
+/* Member.css */
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-table th,
+.member-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.member-table th {
+  background-color: #9000ff;
+  color: white;
+}
+
+.member-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.member-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.member-table button {
+  cursor: pointer;
+}
+
+.member-table td button {
+  margin-right: 0.5rem;
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px); /* Subtle blur effect for background */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px; /* Softer rounded corners */
+  width: 100%;
+  max-width: 300px; /* Slightly wider modal */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for emphasis */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content inside the modal */
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.9); /* Slightly smaller when opening */
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem; /* More breathing space */
+}
+
+/* Modal Form */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; /* Center form items horizontally */
+}
+
+/* Modal Input Fields */
+.modal-content input {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 80%; /* Control input width, making it smaller than the container */
+  max-width: 400px; /* Optional, limits max width for responsiveness */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.modal-content input:focus {
+  border-color: #9000ff; /* Focus effect with color */
+  outline: none;
+}
+
+.modal-content label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #555; /* Softer text color */
+}
+
+.modal-content input {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.modal-content input:focus {
+  border-color: #9000ff; /* Focus effect with color */
+  outline: none;
+}
+
+/* Submit and Cancel Buttons */
+.modal-content button {
+  cursor: pointer;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #9000ff;
+  color: white;
+}
+
+.modal-content button[type="button"] {
+  background-color: #e74c3c;
+  color: white;
+  margin-top: 1rem; /* Space between buttons */
+}
+
+/* Spacing between action buttons */
+.modal-content .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.modal-content .action-buttons button {
+  width: 48%;
+}
+
+.modal-content button:hover {
+  opacity: 0.9;
+}
+
+/* Modal animation */
+.modal-content.show {
+  transform: scale(1); /* Modal expands smoothly */
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #7e00d4; /* Slightly darker hover color */
+}
+
+.modal-content button[type="button"]:hover {
+  background-color: #c0392b; /* Slightly darker hover color */
+}
