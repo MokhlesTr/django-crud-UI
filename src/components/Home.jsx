@@ -9,6 +9,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [members, setMembers] = useState([]);
@@ -48,12 +49,17 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h1>MARHBEEE BIK!</h1>
-      <p>Django POLYYYYYY</p>
+      <div>
+        <h1>MARHBEEE BIK!</h1>
+        <p>Django POLYYYYYY</p>
 
-      <video src="/homeVideo.mp4" autoPlay loop muted className="home-video">
-        Your browser does not support the video tag.
-      </video>
+        <video src="/homeVideo.mp4" autoPlay loop muted className="home-video">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <Link className="btnbtn" to="/Member">
+        <p className="styledtext">Next step !!</p>
+      </Link>
     </div>
   );
 }
